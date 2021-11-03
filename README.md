@@ -1,1 +1,3 @@
-# A Modified Architecture of 7-1 Sass and Sass Guidelines
+# Oatcake Architecture
+
+The Oatcake architecture is an unfinished, modified architecture of 7-1 Sass Architecture and Sass Guidelines. 
