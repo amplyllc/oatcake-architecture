@@ -1,15 +1,18 @@
 // Media Variables
-$mobile: 420px;
-$tablet: 768px;
-$desktop: 1024px;
-$highRes: 1600px;
+$media: (
+  'small': 420px,
+  'medium': 768px,
+  'large': 1024px,
+  'x-large': 1600px,
+);
 
 // Font Vairables
-$heading-font: " ";
-$body-font: " ";
-$paragraph-font: " ";
-$secondary-font: " ";
-$custom-font: " ";
+$fonts: (
+  'heading': '',
+  'paragraph': '',
+  'secondary': '',
+  'custom': '',
+);
 
 // Z-Indexes
 $z-indexes: (

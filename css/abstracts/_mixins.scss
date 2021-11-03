@@ -30,55 +30,55 @@
 
 // Media Mixins
 
-    // Mobile
+    // Small
     @mixin media-sm {
-        @media screen and (min-width: $mobile) {
+        @media screen and (min-width: map.get($media, "small")) {
             @content;
         }
     }
     @mixin media-max-sm {
-        @media screen and (max-width: $mobile) {
+        @media screen and (max-width: map.get($media, "small")) {
             @content;
         }
     }
 
-    // Tablet
+    // Medium
     @mixin media-md {
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: map.get($media, "medium")) {
             @content;
         }
     }
     @mixin media-max-md {
-        @media screen and (max-width: $tablet) {
+        @media screen and (max-width: map.get($media, "medium")) {
             @content;
         }
     }
 
-    // Desktop
+    // Large
     @mixin media-lg {
-        @media screen and (min-width: $desktop) {
+        @media screen and (min-width: map.get($media, "large")) {
             @content;
         }
     }
     @mixin media-max-lg {
-        @media screen and (max-width: $desktop) {
+        @media screen and (max-width: map.get($media, "large")) {
             @content;
         }
     }
 
-    // High Resolution Displays
+    // X-Large
     @mixin media-xl {
-        @media screen and (min-width: $highRes) {
+        @media screen and (min-width: map.get($media, "x-large")) {
             @content;
         }
     }
     @mixin media-max-xl {
-        @media screen and (max-width: $highRes) {
+        @media screen and (max-width: map.get($media, "x-large")) {
             @content;
         }
     }
 
-    // Midpoints
+    // Mid Breakpoints
     @mixin media-sm-md {
         @media screen and (min-width: 594px) {
             @content;

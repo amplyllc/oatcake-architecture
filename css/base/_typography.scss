@@ -5,14 +5,12 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: $heading-font;
+    font-family: map.get($fonts, "heading");
 }
-body {
-    font-family: $paragraph-font;
+p {
+    font-family: map.get($fonts, "paragraph");
 }
-.body-font {
-    font-family: $secondary-font;
-}
+
 // ================================
 // Font Sizing
 // ================================
