@@ -1,0 +1,109 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr 15fr 1fr;
+
+    .logo {
+        width: fit-content;
+    }
+
+    a {
+        color: white;
+
+        &:hover {
+            color: map.get($theme-colors, 'accent');
+
+            @include transition-ease
+        }
+    }
+
+    .menu {
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+        transform: translate(-150px);
+
+        li {
+            padding: 1.5rem 0;
+
+            @include media-md {
+                padding: 0;
+            }
+        }
+
+        @include media-md {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            max-height: none;
+            padding: 0;
+            transform: translate(0px);
+        }
+    }
+
+    .menuIcon {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+
+        @include media-md {
+            display: none;
+        }
+
+        .navIcon {
+            display: block;
+            width: 20px;
+            height: 2px;
+            position: relative;
+            background: white;
+            border-radius: 5px;
+            transition: background .2s ease-out;
+        }
+        .navIcon:before,
+        .navIcon:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: white;
+            border-radius: 5px;
+            transition: all .2s ease-out;
+        }
+        .navIcon:before {
+            top: 6px;
+        }
+        .navIcon:after {
+            top: -6px;
+        }
+    }
+    .menuBtn {
+        display: none;
+    }
+
+    .menuBtn:checked ~ .menu {
+        max-height: 400px;
+        padding: 2rem 0;
+        transform: translate(0px);
+        @include transition-ease
+    }
+
+    .menuBtn:checked ~ .menuIcon .navIcon {
+        background-color: transparent;
+    }
+
+    .menuBtn:checked ~ .menuIcon .navIcon:before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .menuBtn:checked ~ .menuIcon .navIcon:after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+}
+section {
+    z-index: map.get($z-indexes, 'default');
+}

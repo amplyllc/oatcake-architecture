@@ -1,0 +1,19 @@
+// ===================
+// card 1
+// ===================
+.card-1 {
+    border-radius: 25px;
+    box-shadow: -5px 5px 5px rgba(0,0,0,.2);
+
+    img {
+        border-radius: 25px;
+    }
+
+    .text {
+        padding: 2rem;
+
+        h3 {
+            padding: .5rem .5rem
+        }
+    }
+}
