@@ -1,9 +1,6 @@
-$theme-colors: (
-  'primary': #8e3329, 
-  'secondary': #5a1321,
-  'accent': #d98328,
-  'foreground': #191919,
-  'background': #e9e9e9,
-  'white': #e9e9e9,
-  'black': #191919,
-);
+.bg-primary {
+  background-color: map.get($theme-colors, 'primary');
+}
+.bg-secondary {
+  background-color: map.get($theme-colors, 'secondary');
+}

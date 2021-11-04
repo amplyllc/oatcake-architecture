@@ -1,4 +1,15 @@
+@import "base";
+// BASE contains boilerplate used throughout an entire si te. This includes 
+// project-wide typography styles, and stylesheets that universally reset or 
+// normalize default CSS.
+
 @import "colors";
+
+@import "fonts";
+
+@import "normalize";
+// NORMALIZE CSS tries to even out the differences between browsers when 
+// rendering html-elements.
 
 @import "resets";
 // A CSS RESET (or “Reset CSS”) is a short, often compressed (minified) 

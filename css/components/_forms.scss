@@ -1,4 +1,6 @@
 #contactForm {
+  max-width: 500px;
+  
   input,
   textarea {
     background: map.get($theme-colors, "white");

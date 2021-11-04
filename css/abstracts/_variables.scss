@@ -1,4 +1,10 @@
-// Media Variables
+// ---------------------------------
+// map.get($variable, "value")
+// ---------------------------------
+
+// ===================
+// media
+// ===================
 $media: (
   'small': 420px,
   'medium': 768px,
@@ -6,7 +12,9 @@ $media: (
   'x-large': 1600px,
 );
 
-// Font Vairables
+// ===================
+// fonts
+// ===================
 $fonts: (
   'heading': '',
   'paragraph': '',
@@ -14,10 +22,25 @@ $fonts: (
   'custom': '',
 );
 
-// Z-Indexes
+// ===================
+// z-indexes
+// ===================
 $z-indexes: (
   'modal': 5000,
   'dropdown': 4000,
   'default': 1,
   'below': -1,
+);
+
+// ===================
+// colors
+// ===================
+$theme-colors: (
+  'primary': #8e3329, 
+  'secondary': #5a1321,
+  'accent': #d98328,
+  'foreground': #191919,
+  'background': #e9e9e9,
+  'white': #e9e9e9,
+  'black': #191919,
 );

@@ -1,5 +1,5 @@
 // ================================
-// Font Styles
+// font styles
 // ================================
 h1,
 h2,
@@ -12,12 +12,12 @@ p {
 }
 
 // ================================
-// Font Sizing
+// font sizing
 // ================================
 $font-size: 100%;
 $ratio: 1.333;
 
-// Calculate values
+// calculate values
 $h6: $font-size * $ratio;
 $h5: $h6 * $ratio;
 $h4: $h5 * $ratio;
