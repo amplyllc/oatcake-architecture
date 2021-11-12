@@ -1,14 +1,16 @@
 // ================================
 // font styles
 // ================================
-h1,
+h1 {
+    font-family: map.get($fonts, "secondary");
+}
 h2,
 h3,
 h4 {
     font-family: map.get($fonts, "heading");
 }
-p {
-    font-family: map.get($fonts, "paragraph");
+body {
+    font-family: map.get($fonts, "body");
 }
 
 // ================================
@@ -30,28 +32,40 @@ p {
 }
 h4 {
     font-size: $h6;
-    @include media-sm-md {
+    @include media-lg {
+        font-size: $h5;
+    }
+    @include media-xl {
         font-size: $h4;
     }
 }
 
 h3 {
     font-size: $h5;
-    @include media-sm-md {
+    @include media-lg {
+        font-size: $h4;
+    }
+    @include media-xl {
         font-size: $h3;
     }
 }
 
 h2 {
     font-size: $h4;
-    @include media-sm-md {
+    @include media-lg {
+        font-size: $h3;
+    }
+    @include media-xl {
         font-size: $h2;
     }
 }
 
 h1 {
     font-size: $h3;
-    @include media-sm-md {
+    @include media-lg {
+        font-size: $h2;
+    }
+    @include media-xl {
         font-size: $h1;
     }
 }
